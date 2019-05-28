@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Picker,Text,Alert } from "react-native";
 import { connect } from "react-redux";
-import { quoteOftheDay} from "../actions"
+import { employeeUpdate} from "../actions"
 
 import { Card, CardSection, Input, CustomButton
 
@@ -12,10 +12,12 @@ import { Card, CardSection, Input, CustomButton
 
 class EmployeeCreate  extends Component {
 
-    onAddEmployeebtn(phone,email,shift){
-      this.props.quoteOftheDay(phone,email,shift)
-      Alert.alert(phone); 
+    onAddEmployeebtn(name, phone, shift1){
+      this.props.employeeUpdate(name, phone, shift1)
     }
+
+
+
 
 
     render()
@@ -28,9 +30,21 @@ class EmployeeCreate  extends Component {
 
             <Card>
                  
-                    <CardSection />
+                    <CardSection >
+                   
+
+                    
+                    <Input  placeholder="name" label="name"  onChangeText={text => this.props.employeeUpdate({ prop: "name", value: text })} />
+                    </CardSection>
+                    
+                    
                     <CardSection>
-                      <CustomButton onPress={() =>{this.onAddEmployeebtn("Your Quote of the day is", "asd","asdfsd")}}>Add Employee</CustomButton>
+                     <Input  placeholder="phone" label="phone" onChangeText={text => this.props.employeeUpdate({ prop: "phone", value: text }) } />
+                    </CardSection>
+                    
+                    <CardSection>
+
+                      <CustomButton onPress={() =>{this.onAddEmployeebtn("this.props.name", this.props.phone ,"Shift")}}>Add Employee</CustomButton>
                     </CardSection>
            
                   </Card>
@@ -43,14 +57,14 @@ class EmployeeCreate  extends Component {
 const mapStateToProps = state => {
   return {
     phone: state.auth.phone,
-    email: state.auth.email,
-    shift: state.auth.shift
+    name: state.auth.name,
+    shift: state.auth.shift1
    };
   };
 
 
   export default connect(
     mapStateToProps,
-    { quoteOftheDay})(EmployeeCreate);
+    { employeeUpdate})(EmployeeCreate);
 
     

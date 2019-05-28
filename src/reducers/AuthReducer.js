@@ -1,4 +1,4 @@
-import { EMAIL_CHANGED, PASSWORD_CHANGED, QUOTE_OF_THE_DAY } from "../actions/types";
+import { EMAIL_CHANGED, PASSWORD_CHANGED, EMPLOYEE_UPDATE } from "../actions/types";
 
 const INITIAL_STATE = { email: "" };
 export default (state = INITIAL_STATE, action) => {
@@ -10,8 +10,8 @@ export default (state = INITIAL_STATE, action) => {
     return { ...state, password: action.payload};
 
    
-    case QUOTE_OF_THE_DAY:
-     return { ...state, name: action.payload.name, phone: action.payload.phone, shift:action.payload.shift};
+    case EMPLOYEE_UPDATE: //what will happen here?????
+    return { ...state, name: action.payload.name, phone: action.payload.phone, shift1:action.payload.shift1};
 
 
     default:
