@@ -1,0 +1,485 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+<style>
+*{
+
+padding: 0;
+}
+    .topNav {
+        background-color: black;
+        height: 5%;
+        padding-top: 10px;
+        font-size: 20px;
+        
+    
+
+       
+    }
+    .topNav a{
+        color:white;
+        padding:25px;
+       
+        
+    }
+
+   .nav ul, .center-elm ul {
+        display:flex;
+        float:left;
+        padding-left:auto;
+        padding-right:auto;
+        list-style:disc;  
+        padding-left:0px;
+  
+      }
+    li{
+        padding-left:20px;
+    }
+
+    .category ul{
+        display:block;
+        width:100%;
+        list-style-type:disc;
+    }
+
+    .headerBG{
+    
+        height:50%;
+        background-color:darkgrey;
+        font-size: 50px; 
+        padding-top:2%;
+        padding-bottom: 15%;
+        padding-left: 8%;
+      
+    }
+
+    .bg3-color{
+        background-color:white;
+        height:25%;
+        padding-top:40px;
+        line-height:30px;
+
+         
+    }
+
+    .productBox{
+        background-color: lightgray;
+        margin-top:30px;
+        margin-left: 30px;
+        margin: auto;
+        margin-bottom: 30px;
+        height:340px;
+        text-align: center;
+        width:250px;
+   
+    }
+    .center-elm{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .ribbin{
+
+        background-color:darkred;
+        color:azure;
+        width:30%;
+        padding-left:0%;
+        padding-top: 0%;
+        
+    }
+
+
+    .bg5-color{
+    
+        height:200px;
+        background-color:lightgrey;
+        text-align: right; 
+        padding-top:5%;
+        padding-bottom: 15%;
+        padding-right:10%;
+        
+        margin-top: 0.5%;
+  
+}
+
+    .bg6-color li{
+
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-flow: nowrap;
+    border-left:1px solid black;
+    padding-left:15px;
+    padding-right: 30px;
+    font-size: 20px;
+   
+    
+}
+
+.bg6-color li:first-child {
+    border-left: 0 black;
+}
+
+.txtinline{
+
+    display: inline-block;
+}
+
+.imgOverlayRndBox{
+    background-color:rgb(31, 124, 182);
+    color:skyblue;
+    font-size: 40px;
+    text-align: left;
+    margin-left:5px;
+    height:250px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-top:25px ;
+    padding-left:25px ;
+    border-radius: 20px;
+
+}
+
+.clickbtn{
+    font-size: 24px;
+    color: black;
+}
+
+
+.mainclm{
+    background-color: lightgray;
+        margin-top:30px;
+        margin-left: 30px;
+        margin: auto;
+        margin-bottom: 30px;
+        height:340px;
+        width:250px;
+        list-style: none;
+    
+}
+
+.clm2{
+    width: 70%;
+   
+
+}
+
+
+.clm2b{
+    background-color:white;
+    color:skyblue;
+    font-size: 14px;
+    text-align: center;
+    width:177px;
+    height:250px;
+    margin-right:15px ;
+    margin-bottom: 30px;
+    margin-left:5px;
+    padding-right: 15px;
+    margin-top: 10px;
+    padding-top:25px ;
+    padding-left:5px ;
+    border-radius: 20px;
+   
+}
+
+.mainclm li:nth-child(odd){
+    background-color:antiquewhite;
+    
+}
+
+.mainclm li{
+    list-style:none;
+    
+}
+
+.row-pd{
+    padding-left:18px;
+}
+
+.cateoverlay{
+
+    background-color:lightgray;
+   
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    
+    color: white;
+    
+   
+}
+._boxsize{
+    padding-top: 10%;
+    height:350px;
+}
+
+
+
+
+.img1{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('./img/Appreciation.jpg');
+}
+
+.img2{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('./img/app2.jpg');
+    
+}
+
+.img3{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('./img/audience - Copy.jpg');
+    
+}
+
+.img4{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('./img/audience.jpg');
+}
+
+ .img5{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('./img/Appreciation.jpg');
+}
+
+.img6{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('./img/app2.jpg');
+}
+
+
+div.cateoverlay:hover p{
+    border:solid; 
+    padding:5%;
+    }
+    
+   
+
+    div.cateoverlay:hover hr{
+        display:none;
+        visibility: hidden;
+       
+    }
+
+    .block_pd{
+        padding:10%;
+        background-color: aquamarine;
+    }
+    
+    .boxht{
+        height: 150px;
+        width: 35%;
+        text-align: center;
+    }
+    
+   
+
+
+
+</style>
+</head>
+
+<body class="container-fluid">
+     <nav class="nav topNav center-elm topNav a">
+         <ul>            
+             <li><a href="home.html">home</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="books.html">books</a></li>
+            <li><a href="kids.html">kids</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="row headerBG">Buy <span style="color:darkorange;">your</span></br>
+    favourite <span style="color:darkorange;">Books</span></br>
+    from <span style="color:darkorange;"> Here</span></div>
+    
+
+    <div class="row bg3-color">
+           <h1 style="text-align: center;font-size: 30px;">NEW <span style="color:darkorange;">PRODUCTS</span></h1> 
+           <p style="font-size: 16px; text-align: center"> There are many variations of passages of Lorem Ipsum available, but the majority have</br>
+            suffered lebmid alteration in some ledmid form</p>
+    </div>
+
+
+ <div class="container  ">
+    <div class="row center-elm">
+        <div class="col-md-2 col-xs-12 col-sm-5 productBox  col-lg-2">
+            <p class="ribbin">best saller</p>
+        </div>
+        <div class="col-md-2 col-xs-12  col-sm-5 productBox  col-lg-2">
+            <p class="ribbin">hot</p>
+        </div>
+        <div class="col-md-2 col-xs-12 col-sm-5 productBox  col-lg-2">
+            <p class="ribbin">best saller</p>
+        </div>
+        <div class="col-md-2 col-xs-12 col-sm-5 productBox col-lg-2">
+            <p class="ribbin">hot</p>
+        </div>
+
+    </div>
+
+ </div>
+
+    <div class="row bg5-color">
+        <h1 style="font-size: 40px;">STAY WITH US</h1>
+       <P syle="font-size:20px;">Subscribe to our newsletters now and stay up-to-date with new collections,</br>the latest lookbooks and exclusive offers.</P>
+      
+       <p class="txtinline">Enter your e-mail</p><input type="text"/>
+       <p class="txtinline">Subscribe</p><input type="text"/>
+    </div>
+
+    <div class="row bg3-color">
+        <h1 style="text-align: center; font-size: 30px;">ALL <span style="color:darkorange";>PRODUCTS</span></h1>
+        <p style="text-align: center; font-size: 16px;">There are many variations of passages of Lorem Ipsum available, but the majority have </br>suffered lebmid alteration in some ledmid form</p>
+    </div>
+
+<div class="container">
+    <div class="row bg6-color center-elm">
+        <ul>
+            <li><a href="all.html">ALL</a></li>
+            <li><a href="biography.html">BIOGRAPHY</a></li>
+            <li><a href="adventure.html">ADVENTURE</a></li>
+            <li><a href="children.html">CHILDREN</a></li>
+            <li><a href="cook.html">COOK</a></li>
+        </ul>
+    </div>
+    </div> 
+
+    <div class="container">
+        <div class="row center-elm">
+            <div class="col=md-3 productBox">
+                <p class="ribbin">best saller</p>
+            </div>
+            <div class="col=md-3 productBox">
+                <p class="ribbin">best saller</p>
+            </div>
+            <div class="col=md-3 productBox">
+                <p class="ribbin">best saller</p>
+            </div>
+            <div class="col=md-3 productBox">
+                <p class="ribbin">best saller</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="row center-elm">
+            <div class="col-md-4 imgOverlayRndBox"  style="background-image:linear-gradient(rgba(0, 0, 255, 0.9), rgba(255, 255, 0, 0.5)),url('./img/audience.jpg');background-size:240%;" >
+                <p>Governmen </br> auctions</p>
+                <a class="clickbtn" href="click here.html">click here</a>
+            </div>
+            <div class="col-md-4 imgOverlayRndBox"  style="background-image: black, url('./img/audience.jpg');background-size:240%;" >
+                <p>Company </br> liquidation</p>
+                <a class="clickbtn" href="click here.html">click here</a>
+            </div>
+            <div class="col-md-4 imgOverlayRndBox"  style="background-image: black, url('./img/audience.jpg');background-size:240%; ">
+                <p>Discount </br> auctions</p>
+                <a class="clickbtn" href="click here.html">click here</a>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row center-elm category ">
+            <div class="col-md-12 col-sm-12 col-xs-12 clm-lg-12 mainclm">
+                <h1>Categories:</h1>
+                <ul>
+                    <li>Eng</li>
+                    <li>Urdu</li>
+                    <li>Maths</li>
+                    <li>Sci</li>
+                    <li>Phy</li>
+                    <li>Chem</li>
+                    <li>Bio</li>
+                </ul>
+            </div>
+            <div class="col-md-10 col-xs-12 mainclm clm2">
+                <h1>Live auctions:</h1>
+                <div class="row  carousel row-pd">
+                    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-2 clm2b">
+                      
+                        <p>Government</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-2 clm2b">
+                        <p>Company</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-2 clm2b">
+                        <p>Discount</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-2 clm2b">
+                        <p>Payment</p>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row center-elm">
+            <div class="col-md-5 cateoverlay img1 _boxsize" >
+                <p>SNORKELING</p>
+            <hr style="border:solid white; width:10%;">
+            </div>
+            <div class="col-md-2 cateoverlay img2 _boxsize">
+                <p>MESSAGE</p>
+                <hr style="border:solid white; width:10%;">
+            </div>
+            <div class="col-md-5 cateoverlay img3 _boxsize">
+                <p>HIKING</p>
+                <hr style="border:solid white; width:10%;">
+            </div>
+            <div class="col-md-4 cateoverlay img4 _boxsize">
+                <p>TOUR</p>
+                <hr style="border:solid white; width:10%;">
+            </div>
+            <div class="col-md-5 cateoverlay img5 _boxsize">
+                <p>GASTRONOMY</p>
+                <hr style="border:solid white; width:10%;">
+            </div>
+            <div class="col-md-3 cateoverlay img6 _boxsize">
+                <p>SHOPPING</p>
+                <hr style="border:solid white; width:10%;">
+            </div>
+        </div>
+    </div>
+
+
+
+   
+            <div class="row center-elm block_pd">
+                <div class="col-md-5 cateoverlay img1 boxht" >
+                    <p>WINTER TYRES</p>
+                <hr style="border:solid white; width:10%;">
+                </div>
+                <div class="col-md-5 cateoverlay img2 boxht">
+                    <p>SUMMER TYRES</p>
+                    <hr style="border:solid white; width:10%;">
+                </div>
+                <div class="col-md-5 cateoverlay img3 boxht">
+                    <p>SPORTS TYRES</p>
+                    <hr style="border:solid white; width:10%;">
+                </div>
+                <div class="col-md-5 cateoverlay img4 boxht">
+                    <p>CUSTOM WHEELS</p>
+                    <hr style="border:solid white; width:10%;">
+                </div>
+             </div>
+       
+    
+
+        
+
+
+
+
+</body>
+
+
+
+
+</html>
